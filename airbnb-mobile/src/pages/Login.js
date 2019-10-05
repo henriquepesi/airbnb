@@ -16,6 +16,7 @@ import logo from "../assets/logo.png";
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
   const [techs, setTechs] = useState("");
+  // AsyncStorage.clear();
 
   useEffect(() => {
     AsyncStorage.getItem("user").then(user => {
